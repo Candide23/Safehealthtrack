@@ -6,6 +6,11 @@ import io.jsonwebtoken.*;
 import java.util.Date;
 
 
+//This JwtUtil class provides utility methods for handling JSON Web Tokens (JWTs):
+//generateToken: Creates a JWT with the username as the subject, valid for 1 hour.
+//extractUsername: Extracts the username (subject) from a given token.
+// validateToken: Validates a token by checking its signature and expiration.
+
 @Component
 public class JwtUtil {
     private final String secret =  "healthTrack_secret";
